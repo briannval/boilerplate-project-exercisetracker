@@ -115,6 +115,7 @@ app.post("/api/users/:_id/exercises", async (req, res) => {
     date: exercise.date.toDateString(),
     duration: exercise.duration,
     description: exercise.description,
+    _id: user._id,
   });
 });
 
